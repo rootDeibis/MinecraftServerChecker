@@ -1,4 +1,4 @@
-# MinecraftServerApi-Script-JS
+# Javascript MC Server Checker
 
 API BY: https://mcsrvstat.us/
 
