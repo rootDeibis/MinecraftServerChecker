@@ -1,6 +1,6 @@
 # MinecraftServerApi-Script-JS
 
-Live Test: http://oadevelopments.xyz/mctool
+API BY: https://mcsrvstat.us/
 
 ## How To Use?
 
