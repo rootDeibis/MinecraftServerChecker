@@ -1,8 +1,6 @@
 # MinecraftServerApi-Script-JS
 
-##Online Demo
-
-http://oadevelopments.xyz/mctool
+Live Test: http://oadevelopments.xyz/mctool
 
 ## How To Use?
 
