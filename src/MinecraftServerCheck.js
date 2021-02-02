@@ -1,0 +1,44 @@
+/*
+This script was created by OA
+Twitter: OA42236246
+*/
+
+
+
+
+const ServerStatus = function(andress, port) {
+	var Global = {};
+		Global.variables = {},
+		Global.variables.api_url = "https://api.mcsrvstat.us/2/",
+		Global.variables.server_resolved = undefined;
+
+
+	if (andress == undefined) return console.error("[ServerStatus] Enter Server Andress.");
+
+	Global.variables.api_url += andress;
+
+	if (port) Global.variables.api_url += ":" + port;
+
+
+	Global.functions = {};
+
+	Global.functions.getData =  function(callback) {
+		fetch(Global.variables.api_url).then(r => {
+			r.json().then(d => {
+				Global.variables.server_resolved = d;
+				if(callback != undefined && typeof callback === 'function') {
+					callback(d);
+
+				} else {
+					console.log('[ServerStatus] Server Checked');
+				}
+
+			})
+		});
+		return Global.variables;
+	}
+
+
+
+	return Global.functions;
+}
