@@ -18,7 +18,7 @@ API BY: https://mcsrvstat.us/
     <script type="text/javascript">
         var Counter = document.querySelector(".player-counter");
         
-        ServerStatus("play.cubecraft.net").getData(server => {
+        ServerStatus("play.cubecraft.net").then(server => {
         
             if(server.online) {
                var playersOnline = server.players.online;
